@@ -691,7 +691,7 @@ function M($name = '', $tablePrefix = '', $connection = '')
         $_model[$guid] = new $class($name, $tablePrefix, $connection);
     }
 
-    return $_model[$guid];
+    return $_model[$guid]->where(null);
 }
 
 /**
